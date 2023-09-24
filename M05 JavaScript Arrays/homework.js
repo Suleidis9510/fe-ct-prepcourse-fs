@@ -3,35 +3,73 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
+if( myArray.length > 0){
+   return myArray[0]
 }
+}
+let myArray = [1, 2, 3, 4, 5, 6, 7, 8]
+let valorParam = devolverPrimerElemento(myArray)
+console.log(valorParam)
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   if(arr.length > 0){
+      return arr[arr.length - 1]
+   }
 }
+let arr = [1, 2, 3, 4, 5, 6, 7, 8]
+let valorFunction = devolverUltimoElemento(arr)
+console.log(valorFunction)
 
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
-   // Tu código:
+   // Tu código: 
+ if(cadena.length > 0){
+   return "Estos son los valores de mi array: " + array.length
+ }
 }
+let cadena =[1, 2, 3, 4, 5, 6, 7]
+let valorCadena = obtenerLargoDelArray(cadena)
+console.log(valorCadena)
 
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
+   let newResult = []
+for(let i = 0; i < array.length; i++){
+newResult.push(array[i] + 1)
 }
+return newResult
+}
+let arreglos = [1, 2, 3, 4, 5, 6, 7]
+let resultado =incrementarPorUno(arreglos)
+console.log(resultado)
 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+array.push(elemento)
+return array
 }
+let miArray = [1,2,3,4]
+let elementoAgregado = 5;
+let answer = agregarItemAlFinalDelArray(miArray, elementoAgregado)
+console.log(answer)
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
-   // Tu código:
+   // Tu código:  
+   array.unshift(elemento)
+   return array
 }
+let array1 = [1,2,3,4,5]
+let nuevoElemento = 0;
+let respuesta1 = agregarItemAlComienzoDelArray(array1, nuevoElemento)
+console.log(respuesta1)
 
 function dePalabrasAFrase(palabras) {
    // El argumento "palabras" es un arreglo de strings.
@@ -39,25 +77,56 @@ function dePalabrasAFrase(palabras) {
    // con un espacio entre cada palabra.
    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
    // Tu código:
+return palabras.join(" ")
+
 }
+let arregloDePalabras = ["Hola", "mundo!"]
+
+let resultad0 = dePalabrasAFrase(arregloDePalabras)
+console.log(resultad0)
 
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código:
+   return array.includes(elemento)
+
 }
+let otroArreglo = [1,2,3,4,5]
+let element0 = 3;
+let newResult = arrayContiene(otroArreglo, element0)
+console.log(newResult);
+
 
 function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
+   let suma = 0;
+   for(let i = 0; i < arrayOfNums.length; i++){
+      suma = suma + arrayOfNums[i]
+   }
+   return suma
 }
+let numeros = [1,2,3,4,5];
+let miResultad0 = agregarNumeros(numeros);
+console.log(miResultad0);
+
 
 function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
+let suma = 0
+for(let i = 0; i < resultadosTest.length; i++)
+suma = suma + resultadosTest[i]
+
+let promedio = suma / resultadosTest.length
+return promedio
 }
+let resultad0sTest = [1,2,3,4,5]
+let promedio = promedioResultadosTest(resultad0sTest)
+console.log(promedio)
 
 function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
